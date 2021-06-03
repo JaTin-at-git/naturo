@@ -813,7 +813,7 @@ body {
 .navigation__item-span {
   margin-right: 1rem;
 }
-.navigation__link:link, .navigation__link:visited {
+.navigation__link, .navigation__link:link, .navigation__link:visited {
   display: inline-block;
   font-size: 3rem;
   font-weight: 300;
@@ -848,6 +848,7 @@ body {
   z-index: 70;
   opacity: 0;
   width: 0;
+  visibility: hidden;
   transition: all 0.5s 0.2s cubic-bezier(0.71, -0.18, 0.45, 1.29);
 }
 .navigation__checkbox:checked ~ .navigation__background {
@@ -855,6 +856,7 @@ body {
 }
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
+  visibility: visible;
   width: 100vw;
 }
 .navigation__checkbox:checked + .navigation__button .navigation__button-span {
